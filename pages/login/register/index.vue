@@ -171,9 +171,7 @@ export default {
               // 清除随机uid 和 邀请码
               this.$db.del('uuid')
               this.$db.del('invitecode')
-              let redirect = this.$store.state.redirectPage
-                ? this.$store.state.redirectPage
-                : '/pages/member/index/index'
+              let redirect = '/pages/member/index/index'
               this.$store.commit({
                 type: 'redirect',
                 page: ''

@@ -16,7 +16,6 @@ const post = (method, data, callback) => {
 		title: '加载中'
 	});
 
-debugger
      var token
 	// 判断token是否存在
 	if (!(methodsNoToken.indexOf(method) >= 0)) {
