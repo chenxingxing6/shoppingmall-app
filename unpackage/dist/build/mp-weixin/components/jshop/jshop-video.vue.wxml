@@ -1,0 +1,1 @@
+<template name="6e3f9be0"><view class="_view M6e3f9be0 video bottom-cell-group"><video src="{{data.params.list[0].url}}" poster="{{data.params.list[0].image}}" controls autoplay="{{data.params.autoplay}}" class="_video M6e3f9be0"></video></view></template>

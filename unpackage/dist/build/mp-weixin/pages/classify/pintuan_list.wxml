@@ -1,0 +1,2 @@
+<import src="./pintuan_list.vue.wxml" />
+    <template is="f3f7b9e0" data="{{ ...$root['0'], $root }}"/>

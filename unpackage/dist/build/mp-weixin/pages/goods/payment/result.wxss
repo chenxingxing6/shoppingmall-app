@@ -1,0 +1,1 @@
+.result{text-align:center;padding-top:200rpx}.result-img{width:140rpx;height:140rpx;margin-bottom:20rpx}.result-num{color:#666;font-size:30rpx;margin-bottom:20rpx}.result-top{color:#666;font-size:30rpx;margin-bottom:20rpx}.result-mid{margin-bottom:60rpx}.result-bot .btn{margin-top:40rpx;font-size:26rpx;padding:0 50rpx}

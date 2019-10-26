@@ -1,0 +1,1 @@
+<template name="7070a22e"><view class="_view M7070a22e blank" style=" {{(  'background:' +  data.params.backgroundColor +  ';' +  'height:' +  (data.params.height * 2 + 'rpx') +  ';')}}"></view></template>

@@ -1,0 +1,1 @@
+<import src="/components/jshop/jshop-content.vue.wxml" /><template name="bd1394f6"><view class="_view Mbd1394f6 textarea bottom-cell-group"><template wx:if="{{data.params}}" data="{{...$root['0'], ...$root[$kk+'bd1394f6-0'],$root}}" is="2f5640ce"></template></view></template>

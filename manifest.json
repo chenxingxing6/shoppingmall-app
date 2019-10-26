@@ -78,7 +78,7 @@
         "usingComponents" : false
     },
     "h5" : {
-        "title" : "Jshop云商",
+        "title" : "lxh",
         "domain" : "https://wmp.uneedabox.com",
         "router" : {
             "base" : "/wap/",

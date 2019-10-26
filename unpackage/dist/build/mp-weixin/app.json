@@ -1,0 +1,114 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/custom",
+    "pages/index/search",
+    "pages/classify/classify",
+    "pages/classify/index",
+    "pages/cart/index/index",
+    "pages/member/index/index",
+    "pages/member/coupon/index",
+    "pages/member/balance/index",
+    "pages/member/balance/recharge",
+    "pages/member/balance/withdraw_cash",
+    "pages/member/balance/details",
+    "pages/member/balance/cashlist",
+    "pages/member/balance/bankcard",
+    "pages/member/balance/add_bankcard",
+    "pages/member/collection/index",
+    "pages/member/history/index",
+    "pages/member/address/list",
+    "pages/member/address/index",
+    "pages/member/setting/index",
+    "pages/member/setting/user_info/index",
+    "pages/member/setting/user_info/password",
+    "pages/member/integral/index",
+    "pages/member/invite/index",
+    "pages/member/invite/list",
+    "pages/member/take_delivery/index",
+    "pages/member/take_delivery/list",
+    "pages/goods/index/index",
+    "pages/goods/index/group",
+    "pages/goods/place-order/index",
+    "pages/goods/place-order/invoice",
+    "pages/goods/place-order/storelist",
+    "pages/goods/payment/index",
+    "pages/goods/payment/auth",
+    "pages/goods/payment/result",
+    "pages/member/order/orderlist",
+    "pages/member/order/orderdetail",
+    "pages/member/order/invitation_group",
+    "pages/member/after_sale/index",
+    "pages/member/after_sale/list",
+    "pages/member/after_sale/detail",
+    "pages/member/order/evaluate",
+    "pages/member/order/express_delivery",
+    "pages/article/index",
+    "pages/article/list",
+    "pages/login/choose/index",
+    "pages/login/login/index",
+    "pages/login/login/index1",
+    "pages/share",
+    "pages/author",
+    "pages/login/register/index",
+    "pages/classify/pintuan_list",
+    "pages/goods/index/pintuan",
+    "pages/form/detail/form",
+    "pages/member/distribution/index",
+    "pages/member/distribution/apply",
+    "pages/member/distribution/apply_state",
+    "pages/member/distribution/user",
+    "pages/member/distribution/agreement",
+    "pages/member/distribution/order",
+    "pages/member/distribution/popularize",
+    "pages/member/distribution/my_store",
+    "pages/member/distribution/store_setting",
+    "pages/activity/index",
+    "pages/share/jump",
+    "pages/store_map/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "新模板",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#333",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/image/index_gray.png",
+        "selectedIconPath": "static/image/index_black.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "static/image/classify_gray.png",
+        "selectedIconPath": "static/image/classify_black.png"
+      },
+      {
+        "pagePath": "pages/cart/index/index",
+        "text": "购物车",
+        "iconPath": "static/image/cart_gray.png",
+        "selectedIconPath": "static/image/cart_black.png"
+      },
+      {
+        "pagePath": "pages/member/index/index",
+        "text": "我的",
+        "iconPath": "static/image/user_gray.png",
+        "selectedIconPath": "static/image/user_black.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于获取您附近的门店列表"
+    }
+  }
+}

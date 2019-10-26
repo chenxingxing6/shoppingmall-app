@@ -1,0 +1,1 @@
+<template name="edb51340"><view class="_view Medb51340 uni-icon {{['uni-icon-' + type]}}" bindtap="handleProxy" data-eventid="{{'edb51340-0'}}" data-comkey="{{$k}}" style=" {{('color:' + color + ';' + 'font-size:' + fontSize + ';')}}"></view></template>

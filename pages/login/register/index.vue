@@ -83,7 +83,11 @@ export default {
       }
     },
     logoImage() {
-      return this.$store.state.config.shop_logo
+      var img = this.$store.state.config.shop_logo
+      if(img == undefined){
+      		  img = "/static/img/default.jpg"
+      }
+      return img
     }
   },
   onShow() {
@@ -110,10 +114,11 @@ export default {
         this.$common.loadToShow('发送中...')
         setTimeout(() => {
           this.$common.loadToHide()
-          this.$api.sms({ mobile: this.mobile, code: 'reg' }, res => {
-            if (res.status) {
+          this.$api.sms({ telephone: this.mobile}, res => {
+            if (res.isSucess) {
               this.timer = 60
               this.verification = false
+			    this.code = res.data
               this.$common.successToShow(res.msg)
               this.countDown() // 执行验证码计时
               this.btnb = 'btn btn-square btn-all btn-b'
@@ -151,7 +156,7 @@ export default {
         let data = {
           mobile: this.mobile,
           code: this.code,
-          password: this.pwd
+          pwd: this.pwd
         }
 
         // 获取邀请码
@@ -159,9 +164,9 @@ export default {
         if (invicode) {
           data.invitecode = invicode
 				}
-        this.$api.smsLogin(data, res => {
-          if (res.status) {
-            this.$db.set('userToken', res.data)
+        this.$api.reg(data, res => {
+          if (res.isSucess) {
+            this.$db.set('userToken', res.data.token)
             this.$common.successToShow('注册成功', () => {
               // 清除随机uid 和 邀请码
               this.$db.del('uuid')

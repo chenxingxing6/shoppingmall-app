@@ -1,0 +1,1 @@
+.content{position:relative;height:80vh}.content-c{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);text-align:center}.load-img{width:100rpx;height:100rpx}.load-text{font-size:26rpx}

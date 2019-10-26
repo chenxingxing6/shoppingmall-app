@@ -80,10 +80,17 @@ export default {
     // 退出登录
     logOff() {
       this.$common.modelShow('退出', '确认退出登录吗?', () => {
-        this.$db.del('userToken')
-        uni.reLaunch({
-          url: '/pages/index/index'
-        })
+		this.$api.logout({},res => {
+		   if(res.isSucess){
+			   this.$db.del('userToken')
+			   uni.reLaunch({
+			     url: '/pages/index/index'
+			   })
+		   }else{
+			  this.$common.errorToShow(res.msg); 
+		   }
+		})
+       
       })
     }
   }

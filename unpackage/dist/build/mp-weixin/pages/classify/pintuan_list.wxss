@@ -1,0 +1,1 @@
+.list-grid{width:44rpx;height:44rpx;float:left}.img-grids{padding-bottom:26rpx}.img-grids-item{margin-bottom:0}.img-grids>view,.img-list>view{overflow:hidden}.order-none{text-align:center;padding:200rpx 0}.order-none-img{width:274rpx;height:274rpx}.goods-price{margin-bottom:10rpx;width:100%;overflow:hidden}.people-num{margin-left:16rpx}.img-list-item .goods-item-c{bottom:0}

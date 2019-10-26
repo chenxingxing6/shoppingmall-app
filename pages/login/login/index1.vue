@@ -160,8 +160,8 @@ export default {
     // 去登录
     toLogin() {
       let data = {
-        mobile: this.mobile,
-        password: this.pwd
+        telephone: this.mobile,
+        pwd: this.pwd
       }
 
       if (this.isCaptcha) {
@@ -174,9 +174,10 @@ export default {
         data.invitecode = invicode
       }
 
-      this.$api.login(data, res => {
-        if (res.status) {
-          this.$db.set('userToken', res.data)
+      this.$api.login(data,
+	   res => {
+        if (res.isSucess) {
+          this.$db.set('userToken', res.data.token)
           this.redirectHandler()
         } else {
           this.$common.errorToShow(res.msg, () => {

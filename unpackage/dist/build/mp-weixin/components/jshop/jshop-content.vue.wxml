@@ -1,0 +1,1 @@
+<import src="/components/gaoyia-parse/parse.vue.wxml" /><template name="2f5640ce"><view class="_view M2f5640ce content"><template bindpreview="handleProxy" bindnavigate="handleProxy" data-eventid="{{'2f5640ce-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'2f5640ce-0'],$root}}" is="3b975e15"></template></view></template>

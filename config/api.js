@@ -5,8 +5,10 @@ import * as common from './common.js' //引入common
 import * as db from './db.js' //引入common
 // 需要登陆的，都写到这里，否则就是不需要登陆的接口
 const methodsNoToken = [
-	'sso.userInfo',
-	'sso.getAuthCode'
+	'sso/getAuthCode',
+	'sso/register',
+	'sso/pwdLogin',
+	'sso/smsLogin'
 ];
 
 const post = (method, data, callback) => {
@@ -14,6 +16,7 @@ const post = (method, data, callback) => {
 		title: '加载中'
 	});
 
+debugger
      var token
 	// 判断token是否存在
 	if (!(methodsNoToken.indexOf(method) >= 0)) {
@@ -335,26 +338,16 @@ export const uploadImage = (num, callback) => {
 // http请求接口配置
 // 发送短信验证码
 export const sms = (data, callback) => get('sso/getAuthCode?telephone=' + data.telephone, callback);
-
 // 短信验证码登录
 export const smsLogin = (data, callback) => post('sso/smsLogin', data, callback);
-
 // 用户信息
 export const userInfo = (data, callback) => post('sso/userInfo', data, callback);
-
-
-
-// 用户注册
-export const reg = (data, callback) => post('user.reg', data, callback);
-
 // 用户登录
-export const login = (data, callback) => get('sso/getAuthCode' + data, callback);
-
-
-
-
+export const login = (data, callback) => post('sso/pwdLogin', data, callback);
+// 用户注册
+export const reg = (data, callback) => post('sso/register', data, callback);
 // 退出登录
-export const logout = (data, callback) => post('user.logout', data, callback);
+export const logout = (data, callback) => post('sso/logout', data, callback);
 
 
 // 获取店铺配置
@@ -643,7 +636,9 @@ export const login2 = (data, callback) => post('user.wxapplogin2', data, callbac
 export const alilogin1 = (data, callback) => post('user.alipayapplogin1', data, callback);
 
 //取下级地址列表
-export const getAreaList = (data, callback) => post('user.getarealist', data, callback);
+export const getAreaList = (data, callback) => {
+	// post('user.getarealist', data, callback)
+};
 
 //取搜索页推荐关键字
 export const getRecommendKeys = (callback) => post('store.getrecommendkeys', {}, callback);
